@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400&family=Raleway:wght@100;200;300;400&family=Oswald:wght@600&display=swap"
         rel="stylesheet">
     <!-- styles -->
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -35,10 +36,10 @@
                                 <a href="index.html" class="nav-link active">WORK</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link ">ABOUT ME</a>
+                                <a href="aboutme.html" class="nav-link ">ABOUT ME</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link ">LET'S TALK</a>
+                                <a href="#contactme" class="nav-link ">LET'S TALK</a>
                             </li>
                             <li class="mx-auto d-md-none d-xl-none d-xxl-none bld-h mt-3 ">
                                 <h1 class="hamburgerfont">SHOPIFY EXPERT</h1>
@@ -149,13 +150,24 @@
         </div>
     </div>
 
-    <div class="worksample">
-        <img src="images/sunglasslogo.png">
-        <div><h1>SUNGLASS SHOP AND OUTLET</h1></div>
+    <!-- FIRST work sample -->
 
+    <div class="worksample">
+        <div >
+            <div>
+                <h1 class="worktitlefont ">SUNGLASS </h1>
+            </div>
+            <div>
+                <h1 class="worktitlefont ">SHOP AND OUTLET</h1>
+            </div>
+            <button type="button" class="btn btn-outline-warning">Explore</button>
+        </div>
+        <div class="pattern-dots-md text-warning" style="height:600px;">
+            <img style="transform:translate(25px, -25px);" src="images/worksample.png" class="workimg">
+        </div>
     </div>
 
-    <!-- FRIST Testimonial -->
+    <!-- Testimonial ONE -->
     <div class="testimonial">
         <h2 class="col-8">
             When I needed content or copy, Esteban was on it to make sure that our client was able to obtain the right deliverable
@@ -173,7 +185,7 @@
         </div>
     </div>
 
-    <!-- TWO Testimonial -->
+    <!-- Testimonial TWO -->
     <div class="testimonial">
         <h2 class="col-8">
             Esteban was timely, professional, and well-versed regarding all of the operational components. He quickly identified our
@@ -187,9 +199,6 @@
     <!-- SECOND Work Sample -->
     <div class="advertisement">
         <div>
-            <img src="images/Screen Shot 2021-09-11 at 5.35.56 PM.png">
-        </div>
-        <div>
             <h1>Is your store ready for the holidays?</h1>
             <h3>Have you tested performance for traffic and speed</h3>
             <h3>Have you updated your website copy and images?</h3>
@@ -197,109 +206,30 @@
         </div>
     </div>
 
-
-   <!-- Testimonial Carousel -->
-
-    <div class="container testimonialcarouselcontainer">
-        <div class="text-center mt-5 test ttl">
-            <h5 class="mx-auto mt-5"><span class="underline text-white">MORE TESTIMONIALS</span></h3>
-        </div>
-        <div class="row ">
-            <div class="col-md-12 ">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Esteban Porras was very helpful (and cheerful, considering the awful weather!) in understanding what I needed to be done
-                                            - he explained all my options clearly and completely. I was pleased with the estimate and we were able to lock in
-                                            everything in one visit.
-                                        </h3>
-                                        <h3>
-                                            -Laura O.
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Very informed and very polite. He was patient with my needs and questions.
-                                        </h3>
-                                        <h3>
-                                            -Just M.
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Excellent Service and excellent product. Very satisfied!
-                                        </h3>
-                                        <h3>
-                                            -Leslie S.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Esteban was great. Courteous and professional, he explained what my options were and got me the best deal possible.
-                                            Really appreciate it!
-                                        </h3>
-                                        <h3>
-                                            -Edward S.
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Esteban Porras is amazing. Very good customer service and complete follow-up to make sure that all my questions were
-                                            answered, adjustments, and goes the extra mile. Highly recommended.
-                                        </h3>
-                                        <h3>
-                                            -Don R.
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-box-testimonial">
-                                        <h3 class="col-8">
-                                            Very happy with Mr. Esteban Porras - very competent and helpful!
-                                        </h3>
-                                        <h3>
-                                            -Steph S.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Testimonial THREE -->
+    <div class="testimonial">
+        <h2 class="col-8">
+            Esteban was very helpful (and cheerful, considering the awful weather!)
+            in understanding what I needed to be done
+            - he explained all my options clearly and completely. I was pleased with the
+            estimate and we were able to lock in
+            everything in one visit.
+        </h2>
+        <h3>
+            -Laura O.
+        </h3>
     </div>
+
+  
 
     <!-- Gif, santa typing lump of coal -->
 
-
+    <!-- CONTACT ME -->
     <div id="contactme">
         <div class="text-center mt-5 test ttl">
-            <h5 class="mx-auto mt-5"><span class="underline text-white">LET'S TALK</span></h3>
+            <h5 class="mx-auto mt-5"><span class="underline text-dark">LET'S TALK</span></h3>
         </div>
-        <form class="mt">
+        <form>
             <div class="container col-lg-5 col-md-12 col-sm-12 col-12 mt-5">
                 <div class="row ">
                     <div class="mb-3 col-6">
@@ -319,10 +249,8 @@
                     <label for="exampleFormControlTextarea1" class="form-label">MESSAGE</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="pt-3 ">
-                    <input type="checkbox"> <label class="me-5">Not a robot</label>
-                    <button class="btn btn-outline-info ">Send
-                        Message</button>
+                <div class="pt-3">
+                    <button class="btn btn-info btn-lg text-white">Send Message</button>
                 </div>
             </div>
         </form>
@@ -330,15 +258,15 @@
     
     
     <!-- Footer -->
-    <footer class="col-8 mx-auto mt-5">
+    <footer class="mx-auto mt-5 pb-5 pt-5">
         <div class="footer">
             <hr class="hr">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <ul class="list-unstyled ">
-                        <li><a href="index.html" class="text-decoration-none text-dark">WORK</a></li>
-                        <li><a href="aboutme.html" class="text-decoration-none text-dark">ABOUT ME</a></li>
-                        <li><a href="letstalk.html" class="text-decoration-none text-dark">LET'S TALK</a></li>
+                        <li><a href="index.html" class="text-decoration-none text-white">WORK</a></li>
+                        <li><a href="aboutme.html" class="text-decoration-none text-white">ABOUT ME</a></li>
+                        <li><a href="letstalk.html" class="text-decoration-none text-white">LET'S TALK</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
