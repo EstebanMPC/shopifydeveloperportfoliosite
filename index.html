@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400&family=Raleway:wght@100;200;300;400&family=Oswald:wght@600&display=swap"
         rel="stylesheet">
     <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -24,7 +25,7 @@
     <section class="showcase">
         <header>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg  navbar-dark fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark fluid animate__animated animate__fadeInDown">
                 <div class="container-fluid">
                     <a href="index.html" class="navbar-brand text-info"><span>ESTEBAN PORRAS</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -52,13 +53,29 @@
         <video src="./images/backgroundvideo.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <!-- Hero Text -->
-        <div class="text">
+        <div class="text animate__animated animate__fadeInUp">
             <h1 class="titlefont"><span class="underline">SHOPIFY DEVELOPER</span></h1>
-            <h3 class="mt-4">Based out of Washington DC</h3>
-            <h4>My goal is to help you reach your Shopify goals</h4>
-            <button type="button" class="btn btn-outline-info  btn-lg mt-5">Explore</button>
+            <h4 class="col-6 mt-4">I am a Shopify Developer based out of Washington DC who loves to create, design, resolve, and expedite.</h4>
+            <button type="button" class="btn btn-outline-info btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">About Me</button>
         </div>
     </section>
+
+    <!-- MODAL -->
+
+    <div class="modal fade text-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-centered">
+            <div class="modal-content aboutMeModal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad tenetur iure nesciunt pariatur dolores accusamus facilis, sunt inventore beatae, alias eligendi necessitatibus vitae ipsam fugiat esse ipsum, hic magni?</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Programming icons Carousel  -->
     <div class="container carouselcontainer">
@@ -153,16 +170,19 @@
     <!-- FIRST work sample -->
 
     <div class="worksample">
-        <div >
+        <div class="m-5 animate__animated animate__fadeInLeft">
             <div>
                 <h1 class="worktitlefont ">SUNGLASS </h1>
             </div>
             <div>
                 <h1 class="worktitlefont ">SHOP AND OUTLET</h1>
             </div>
-            <button type="button" class="btn btn-outline-warning">Explore</button>
+            <div>
+                <h3 class="text-white">Sunglasses for every occasion</h3>
+            </div>
+            <button type="button" class="btn btn-outline-info">Explore</button>
         </div>
-        <div class="pattern-dots-md text-warning" style="height:600px;">
+        <div class="pattern-dots-md text-warning m-5  animate__animated animate__fadeInRight" style="height:450px;">
             <img style="transform:translate(25px, -25px);" src="images/worksample.png" class="workimg">
         </div>
     </div>
@@ -231,18 +251,12 @@
         </div>
         <form>
             <div class="container col-lg-5 col-md-12 col-sm-12 col-12 mt-5">
-                <div class="row ">
-                    <div class="mb-3 col-6">
-                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
-                    </div>
-                    <div class="mb-3 col-6">
-                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
-                    </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
                 </div>
                 <div class="mb-3">
@@ -261,7 +275,7 @@
     <footer class="mx-auto mt-5 pb-5 pt-5">
         <div class="footer">
             <hr class="hr">
-            <div class="row">
+            <div class="col-12">
                 <div class="col-4 col-sm-2 offset-1">
                     <ul class="list-unstyled ">
                         <li><a href="index.html" class="text-decoration-none text-white">WORK</a></li>
@@ -269,7 +283,7 @@
                         <li><a href="letstalk.html" class="text-decoration-none text-white">LET'S TALK</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
+                <div class="col-5 col-sm-5 text-center">
                     <a href="http://facebook.com/"><i class="fa fa-facebook fa-2x mx-2"></i></a>
                     <a href="http://twitter.com/"><i class="fa fa-twitter fa-2x mx-2"></i></a>
                     <a href="http://youtube.com/"><i class="fa fa-youtube fa-2x"></i></a>
