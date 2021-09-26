@@ -5,11 +5,20 @@
     "pattern.css": "^1.0.0"
   },
   "scripts": {
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "imagemin": "imagemin img/* -o dist/img",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2"
   }
 }
