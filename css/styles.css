@@ -24,7 +24,7 @@ body {
 
 .worktitlefont {
   font-family: "oswald", sans-serif;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 4rem;
   color: white;
 }
 
