@@ -13,7 +13,7 @@ body {
 /* FONTS */
 .titlefont {
   font-family: "Oswald", sans-serif;
-  font-size: 5.75rem;
+  font-size: clamp(3.5rem, 5vw, 7.75rem);
 }
 
 .hamburgerfont {
@@ -228,3 +228,79 @@ footer {
 /* Analogous harmony rule Palette {
   color: #00d9c2 #00f898 #0dcaf0 #007cd9 #004cf8;
 } */
+
+@media only screen and (min-width: 768px) {
+  .workmobile {
+    display: none;
+  }
+
+  .backgroundmobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .showcase {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .backgroundvideo {
+    display: none;
+  }
+
+  .backgroundmobile {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .herotext {
+    text-align: center;
+  }
+
+  .worksample {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .workmobile {
+    width: auto;
+    height: 450px;
+  }
+
+  .workimg {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  .workgif {
+    display: none;
+  }
+
+  .worksampletwo {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .testimonial {
+    height: 460px;
+    padding-top: 40px;
+  }
+
+  .underline {
+    background-size: 0% 3px;
+    transition: background-size 300ms ease;
+  }
+}
