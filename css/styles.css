@@ -189,9 +189,13 @@ body {
   padding-top: 25px;
 }
 
-.workimg {
-  width: auto;
+.gifimgcontainer {
   height: 450px;
+}
+
+.workgif {
+  width: auto;
+  max-height: 450px;
 }
 
 /* Second Work Sample */
@@ -209,6 +213,11 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 25px;
+}
+
+.workimg {
+  width: auto;
+  max-height: 450px;
 }
 
 .underlinetalk {
@@ -229,6 +238,10 @@ footer {
   .workmobile {
     display: none;
   }
+
+  /* .workimg {
+    display: none;
+  } */
 
   .backgroundmobile {
     display: none;
@@ -281,9 +294,76 @@ footer {
     height: 450px;
   }
 
+  .workgif {
+    display: none;
+  }
+
   .workimg {
-    max-width: 80vw;
+    width: 300px;
     height: auto;
+    object-fit: contain;
+  }
+
+  .testimonial {
+    padding-top: 40px;
+  }
+
+  .underline {
+    background-size: 0% 3px;
+    transition: background-size 300ms ease;
+  }
+}
+
+/* @media only screen and (max-height: 375px) {
+  .showcase {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .backgroundvideo {
+    display: none;
+  }
+
+  .backgroundmobile {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .herotext {
+    text-align: center;
+  }
+
+  .worksample {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .worksampletwo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px, 0;
+  }
+
+  .workmobile {
+    width: auto;
+    height: 450px;
+  }
+
+  .workimg {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
   }
 
   .workgif {
@@ -298,7 +378,7 @@ footer {
     background-size: 0% 3px;
     transition: background-size 300ms ease;
   }
-}
+} */
 
 /* * {
   background: #000 !important;
