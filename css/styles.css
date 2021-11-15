@@ -34,7 +34,8 @@ body {
 }
 
 .herotext > h4 {
-  font-size: clamp(15px, 5vw, 25px);
+  font-size: clamp(14px, 5vw, 18px);
+  line-height: 1.8;
 }
 /* Header */
 
@@ -156,7 +157,7 @@ body {
 /* TESTIMONIALS */
 
 .testimonial {
-  height: 350px;
+  height: 530px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -201,14 +202,39 @@ body {
 
 /* Second Work Sample */
 
-/* background-image: linear-gradient(180deg, #006533, #00522f, #004029, #002e21); */
+/* linear-gradient(180deg, #004b5b 0%, #ffa7a7 100%),
+    linear-gradient(244.35deg, #ffb26a 0%, #3676b1 50.58%, #00a3ff 100%),
+    linear-gradient(244.35deg, #ffffff 0%, #007089 49.48%, #ff005c 100%),
+    radial-gradient(100% 233.99% at 0% 100%, #6d3b00 0%, #8fff00 100%),
+    linear-gradient(307.27deg, #219d87 0.37%, #93c32e 50.19%, #2800c6 100%),
+    radial-gradient(
+      100% 140% at 100% 0%,
+      #ff00c7 0%,
+      #006c7a 49.48%,
+      #760000 100%
+    ); */
 
+/* background-image: linear-gradient(180deg, #006533, #00522f, #004029, #002e21); */
+/* 01dab2 */
 .worksampletwo {
-  background-image: linear-gradient(
-    90deg,
-    rgba(19, 126, 57, 1) 0.2%,
-    rgba(8, 65, 91, 1) 80.5%
-  );
+  background: linear-gradient(
+      114.95deg,
+      rgba(235, 0, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0) 38.87%
+    ),
+    linear-gradient(180deg, #004b5b 0%, #ffa7a7 100%),
+    linear-gradient(244.35deg, #ffb26a 0%, #3676b1 50.58%, #00a3ff 100%),
+    linear-gradient(244.35deg, #ffffff 0%, #007089 49.48%, #ff005c 100%),
+    radial-gradient(100% 233.99% at 0% 100%, #6d3b00 0%, #8fff00 100%),
+    linear-gradient(307.27deg, #219d87 0.37%, #93c32e 50.19%, #2800c6 100%),
+    radial-gradient(
+      100% 140% at 100% 0%,
+      #ff00c7 0%,
+      #006c7a 49.48%,
+      #760000 100%
+    );
+  background-blend-mode: hard-light, overlay, overlay, overlay, difference,
+    difference, normal;
   height: 100vh;
   width: 100%;
   display: flex;
