@@ -257,7 +257,7 @@ footer {
   align-items: center;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .workmobile {
     display: none;
   }
@@ -267,7 +267,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .showcase {
     align-items: center;
     flex-direction: column;
