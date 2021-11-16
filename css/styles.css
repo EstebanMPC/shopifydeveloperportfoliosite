@@ -97,6 +97,15 @@ body {
   );
 }
 
+.modaltext > h5 {
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+.modalcard {
+  max-width: 80px;
+}
+
 /* #00f898 #0dcaf0  #004cf8; */
 
 /* ABOUT ME HEADER */
