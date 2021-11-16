@@ -199,21 +199,6 @@ body {
 }
 
 /* Second Work Sample */
-
-/* linear-gradient(180deg, #004b5b 0%, #ffa7a7 100%),
-    linear-gradient(244.35deg, #ffb26a 0%, #3676b1 50.58%, #00a3ff 100%),
-    linear-gradient(244.35deg, #ffffff 0%, #007089 49.48%, #ff005c 100%),
-    radial-gradient(100% 233.99% at 0% 100%, #6d3b00 0%, #8fff00 100%),
-    linear-gradient(307.27deg, #219d87 0.37%, #93c32e 50.19%, #2800c6 100%),
-    radial-gradient(
-      100% 140% at 100% 0%,
-      #ff00c7 0%,
-      #006c7a 49.48%,
-      #760000 100%
-    ); */
-
-/* background-image: linear-gradient(180deg, #006533, #00522f, #004029, #002e21); */
-/* 01dab2 */
 .worksampletwo {
   background: linear-gradient(
       114.95deg,
@@ -272,7 +257,7 @@ footer {
   align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .workmobile {
     display: none;
   }
