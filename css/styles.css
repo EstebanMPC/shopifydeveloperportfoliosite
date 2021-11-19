@@ -103,7 +103,7 @@ body {
 }
 
 .modalcard {
-  max-width: 80px;
+  max-width: 250px;
 }
 
 /* #00f898 #0dcaf0  #004cf8; */
@@ -164,7 +164,7 @@ body {
 /* TESTIMONIALS */
 
 .testimonial {
-  height: 530px;
+  height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -266,14 +266,10 @@ footer {
   align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .workmobile {
-    display: none;
-  }
-
-  .backgroundmobile {
-    display: none;
-  }
+.backgroundmobile {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
@@ -281,16 +277,6 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .backgroundvideo {
-    display: none;
-  }
-
-  .backgroundmobile {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .herotext {
@@ -320,10 +306,6 @@ footer {
   .workmobile {
     width: auto;
     height: 450px;
-  }
-
-  .workgif {
-    display: none;
   }
 
   .workimg {
