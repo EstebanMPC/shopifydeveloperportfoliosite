@@ -189,7 +189,7 @@ body {
     rgba(5, 8, 114, 1) 0%,
     rgba(7, 3, 53, 1) 97.5%
   );
-  height: 100vh;
+  height: 102vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -227,7 +227,7 @@ body {
     );
   background-blend-mode: hard-light, overlay, overlay, overlay, difference,
     difference, normal;
-  height: 100vh;
+  height: 102vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -301,6 +301,10 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 100px, 0;
+  }
+
+  .ws2 {
+    width: 375px;
   }
 
   .workmobile {
