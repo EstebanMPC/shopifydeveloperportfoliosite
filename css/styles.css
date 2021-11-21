@@ -272,6 +272,11 @@ footer {
   background-size: cover;
 }
 
+.workmobile {
+  width: auto;
+  height: 450px;
+}
+
 @media only screen and (max-width: 768px) {
   .showcase {
     align-items: center;
@@ -305,11 +310,6 @@ footer {
 
   .ws2 {
     width: 375px;
-  }
-
-  .workmobile {
-    width: auto;
-    height: 450px;
   }
 
   .workimg {
