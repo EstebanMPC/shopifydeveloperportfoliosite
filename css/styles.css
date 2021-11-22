@@ -237,8 +237,17 @@ body {
 }
 
 .workimg {
-  width: auto;
+  max-width: 760px;
   max-height: 450px;
+}
+
+.imagecontainer {
+  width: 100%;
+}
+
+.linebackground {
+  max-width: 760px;
+  margin: 2.5rem;
 }
 
 .underlinetalk {
@@ -246,10 +255,6 @@ body {
   background-size: 100% 3px;
   background-repeat: no-repeat;
   background-position: left bottom;
-}
-
-.imagecontainer {
-  width: 100%;
 }
 
 /* FOOTER */
