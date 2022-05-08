@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* FONTS */
 .titlefont {
   font-family: "Oswald", sans-serif;
@@ -25,6 +29,11 @@ body {
 .worktitlefont {
   font-family: "oswald", sans-serif;
   font-size: clamp(2rem, 5vw, 6rem);
+  color: white;
+}
+.writetitlefont {
+  font-family: "oswald", sans-serif;
+  font-size: clamp(2rem, 5vw, 5rem);
   color: white;
 }
 
@@ -130,7 +139,18 @@ body {
   transition: background-size 300ms ease;
 }
 
+.underline_two {
+  background-image: linear-gradient(90deg, rgba(254, 113, 210, 1),rgba(184, 96, 255, 1));
+  background-size: 6% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
 .underline:hover {
+  background-size: 100% 3px;
+}
+.underline_two:hover {
   background-size: 100% 3px;
 }
 
@@ -179,6 +199,10 @@ body {
 
 .testimonial h3 {
   font-size: 15px;
+}
+
+#work {
+  max-width: 100vw;
 }
 
 /* First Work sample */
@@ -282,6 +306,96 @@ footer {
   height: 450px;
 }
 
+
+
+.checked {
+  color: orange;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+Analogous harmony rule Palette {
+  color: #00d9c2 #00f898 #0dcaf0 #007cd9 #004cf8;
+}
+
+
+.writingsample{
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  height: 102vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.writingsampletwo {
+  background-image: linear-gradient(110.1deg, rgba(30, 2, 83, 1) 44.2%, rgba(198, 55, 160, 1) 138.2%);
+  height: 102vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.writingsamplethree {
+  background: #D12F24;
+  background: -webkit-radial-gradient(top, #D12F24, #3A0818);
+  background: -moz-radial-gradient(top, #D12F24, #3A0818);
+  background: radial-gradient(to bottom, #D12F24, #3A0818);
+  height: 102vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.landingimage{
+  background-image: url("img/setup.jpg");
+  width: 100%;
+  height: 100;
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 
+Purple
+background: #A71BDF;
+background: -webkit-radial-gradient(top, #A71BDF, #460268);
+background: -moz-radial-gradient(top, #A71BDF, #460268);
+background: radial-gradient(to bottom, #A71BDF, #460268); */
+
+/* 
+red
+background: #BC2C21;
+background: -webkit-radial-gradient(top, #BC2C21, #3A0818);
+background: -moz-radial-gradient(top, #BC2C21, #3A0818);
+background: radial-gradient(to bottom, #BC2C21, #3A0818);
+
+red brighter
+background: #D12F24;
+background: -webkit-radial-gradient(top, #D12F24, #3A0818);
+background: -moz-radial-gradient(top, #D12F24, #3A0818);
+background: radial-gradient(to bottom, #D12F24, #3A0818);
+*/
+
+.mockup {
+  -webkit-box-shadow: 1px 18px 35px 12px rgba(0, 0, 0, 0.57);
+  box-shadow: 1px 18px 35px 12px rgba(0, 0, 0, 0.57);
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .showcase {
     align-items: center;
@@ -303,7 +417,26 @@ footer {
     padding-top: 25px;
   }
 
+  .writingsample, .writingsamplethree {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
   .worksampletwo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px, 0;
+  }
+  .writingsampletwo {
     height: auto;
     width: 100%;
     display: flex;
@@ -331,18 +464,4 @@ footer {
     background-size: 0% 3px;
     transition: background-size 300ms ease;
   }
-}
-
-.checked {
-  color: orange;
-}
-
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
-
-Analogous harmony rule Palette {
-  color: #00d9c2 #00f898 #0dcaf0 #007cd9 #004cf8;
 }
